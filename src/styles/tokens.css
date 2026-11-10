@@ -1,0 +1,53 @@
+:root[data-tpl="glass"], :root {
+  --bg: #06141c;
+  --surface: rgba(255, 255, 255, 0.07);
+  --surface2: rgba(255, 255, 255, 0.10);
+  --ink: #ecfbf8;
+  --muted: #9db9bb;
+  --line: rgba(255, 255, 255, 0.15);
+  
+  /* Accent: default Amber #f97316 to match the user's uploaded screenshots, switchable to Mint #6ee7d0 */
+  --accent: #f97316;
+  --on-accent: #06141c;
+  
+  --accent2: #9b8cff; /* violet: badges, "on leave", approved-leave dots */
+  --good: #5eead4;
+  --warn: #fcd34d;
+  --bad: #fda4af;
+  --info: #93c5fd;
+  
+  color-scheme: dark;
+  
+  /* Typography */
+  --font-display: 'Syne', sans-serif;
+  --font-body: 'Manrope', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-data: 'Manrope', monospace;
+  
+  /* Shape and Spacing Tokens */
+  --radius: 22px;
+  --pad: 20px;
+  --gap: 14px;
+  --rail: 236px;
+  --h-weight: 700;
+  --card-border: 1px solid var(--line);
+  --card-shadow: 0 18px 40px -22px rgba(0, 0, 0, 0.7);
+  --blur: blur(18px) saturate(140%);
+}
+
+/* Theme accent variants */
+[data-accent="amber"] {
+  --accent: #f97316;
+  --on-accent: #06141c;
+}
+
+[data-accent="mint"] {
+  --accent: #6ee7d0;
+  --on-accent: #032a24;
+}
+
+/* Compact density mode */
+[data-density="compact"] {
+  --pad: 12px;
+  --gap: 10px;
+}
+
